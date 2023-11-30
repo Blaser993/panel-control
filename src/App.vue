@@ -31,23 +31,15 @@ export default {
     <aside>
       <KeepAlive :max="3">
         <div class="container">
-          
-
           <component :is="compName"></component>
-          
         </div>
       </KeepAlive>
     </aside>
-
   </main>
-  
-  
 </template>
 
 <style lang="scss">
 @import './assets/css/main.scss';
-
-
 
 header{
   position: sticky;
@@ -58,8 +50,8 @@ header{
   border-bottom: var(--border);
   text-transform: uppercase;
   justify-content: space-evenly;
+
   h2{
-    
     margin: 0px;
     padding-top: 0px;
   }
@@ -68,8 +60,6 @@ header{
 main{
   height: 85vh;
 }
-
-
 
 nav{
   width: 20vw;
@@ -94,7 +84,7 @@ nav{
 
 aside{
   width: 100%;
-  background-color:lightgrey;
+  background-color:white;
 }
 
 
