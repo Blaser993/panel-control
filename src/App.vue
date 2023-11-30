@@ -31,7 +31,10 @@ export default {
     <aside>
       <KeepAlive :max="3">
         <div class="container">
+          
+
           <component :is="compName"></component>
+          
         </div>
       </KeepAlive>
     </aside>
@@ -52,7 +55,7 @@ header{
   left: 0;
   width: 100vw;
   height: 15vh;
-  border-bottom: 4px solid;
+  border-bottom: var(--border);
   text-transform: uppercase;
   justify-content: space-evenly;
   h2{
@@ -66,10 +69,12 @@ main{
   height: 85vh;
 }
 
+
+
 nav{
   width: 20vw;
   min-width: 96px;
-  border-right: 4px solid;
+  border-right: var(--border);
   font-weight: 600;
   text-transform: uppercase;
   li{
@@ -79,7 +84,7 @@ nav{
     }
   }
   li:hover{
-    color: orange;
+    color: var(--yellow)
   }
 }
 .active{

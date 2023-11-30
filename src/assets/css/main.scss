@@ -21,6 +21,19 @@ text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 -webkit-text-size-adjust: 100%;
+
+// neobrutalism custom
+--green: #00ff9f;
+--yellow: #ffdd1d;
+--purple: #9c7bff;
+--blue: #4b69fe;
+--light-purple: #f8e0fa;
+--light-green: #b2e2bb;
+--light-yellow: #fbdba0;
+--font: "Work Sans", sans-serif;
+--shadow-1: 1.5vmin 1.5vmin #000;
+--border: solid 1vmin #000;
+--border-small: solid 0.65vmin #000;
 }
 
 a {
@@ -54,7 +67,7 @@ transition: border-color 0.25s;
 #app {
     height: 100vh;
     width: 100vw;
-text-align: center;
+    text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
