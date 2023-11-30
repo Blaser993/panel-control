@@ -1,44 +1,66 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
-  <nav class="container-full">
-    <h1>panel control </h1>     
-  </nav>
+
+  <header class="column">
+    <h2>panel control dashboard</h2>     
+  </header>
+  <main class="row">
+
+    <nav>
+      <ul class="column">
+        <li><a href="">overview</a></li>
+        <li><a href="">consumo</a></li>
+        <li><a href="">logs</a></li>
+      </ul>
+    </nav> 
+
+    <aside>
+      content
+    </aside>
+
+  </main>
+  
   
 </template>
 
 <style lang="scss">
 @import './assets/css/main.scss';
 
-nav{
-  position: fixed;
+
+
+header{
+  position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
-  border-bottom: 2px solid;
-  box-shadow: 0px 1px 2px;
-
-  span{
-    font-size: 24px;
-  }
-
-  ul :first-child{
-    flex-grow: 5;
-    cursor: default;
-
-    :hover{
-      cursor: pointer;
-      color: currentColor;
-    }
-  }
-
-  li{
-    flex-grow: 2;
-    cursor: pointer;
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 3px solid;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+  h2{
+    margin: 0px;
+    padding-top: 0px;
   }
 }
+
+main{
+  height: 90%;
+}
+
+nav{
+  width: 20vw;
+  min-width: 96px;
+  border-right: 3px solid;
+}
+
+aside{
+  width: 100%;
+  background-color: azure;
+}
+
 
 </style>
 

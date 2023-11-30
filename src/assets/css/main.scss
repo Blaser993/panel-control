@@ -1,5 +1,12 @@
 @import './variables.scss';
 
+html{
+    border: none;
+    margin: none;
+}
+
+body{margin: 0px; padding: 0px;}
+
 :root {
 font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 line-height: 1.5;
@@ -25,14 +32,10 @@ a:hover {
 color: #535bf2;
 }
 
-body {
-margin: 0;
-min-width: 320px;
-}
-
-h1 {
-font-size: 3.2em;
-line-height: 1.1;
+*{
+margin: none;
+padding: none;
+box-sizing: border-box;
 }
 
 button {
@@ -47,9 +50,10 @@ cursor: pointer;
 transition: border-color 0.25s;
 }
 
+
 #app {
-padding: auto ;
-margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
 text-align: center;
 }
 
@@ -69,19 +73,7 @@ button {
 
   $bgColor: red;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-  background-color: $bgColor;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 
 
 //mio stile reset
@@ -102,16 +94,19 @@ a{
   max-width: 100vw;
 }
 
-.content{
-  max-height: 80vh;
-}
 
 .container{
   padding-top: 24px;
   max-width: 800px;
   margin: 0 auto;
 }
+
 .row{
   display: flex;
   flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
 }
