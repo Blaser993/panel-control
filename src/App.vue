@@ -1,5 +1,11 @@
-<script setup>
-
+<script>
+      export default {
+    data () {
+      return {
+        compName: 'overview'
+      }
+    }
+  }
 </script>
 
 <template>
@@ -11,14 +17,16 @@
 
     <nav>
       <ul class="column">
-        <li><a href="">overview</a></li>
-        <li><a href="">consumo</a></li>
-        <li><a href="">logs</a></li>
+        <label><input type="radio" name="rbgComp" v-model="compName" :value="'overview'"> overview</label>
+        <label><input type="radio" name="rbgComp" v-model="compName" :value="'consume'"> consume</label>
+        <label><input type="radio" name="rbgComp" v-model="compName" :value="'logs'"> logs</label>
       </ul>
     </nav> 
 
     <aside>
-      content
+      <KeepAlive :max="3">
+        <component :is="compName"></component>
+      </KeepAlive>
     </aside>
 
   </main>
