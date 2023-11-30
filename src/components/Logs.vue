@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        Logs
+        logs
     </div>
 </template>
 <script>

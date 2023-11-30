@@ -1,11 +1,16 @@
 <script>
-      export default {
-    data () {
-      return {
-        compName: 'overview'
-      }
-    }
-  }
+export default {
+  data() {
+    return {
+      compName: 'overview',
+    };
+  },
+  methods: {
+    setComponent(componentName) {
+      this.compName = componentName;
+    },
+  },
+};
 </script>
 
 <template>
@@ -17,15 +22,17 @@
 
     <nav>
       <ul class="column">
-        <label><input type="radio" name="rbgComp" v-model="compName" :value="'overview'"> overview</label>
-        <label><input type="radio" name="rbgComp" v-model="compName" :value="'consume'"> consume</label>
-        <label><input type="radio" name="rbgComp" v-model="compName" :value="'logs'"> logs</label>
+        <li @click="setComponent('overview')" :class="{ 'active': compName === 'overview' }"><p>overview</p></li>
+        <li @click="setComponent('consume')" :class="{ 'active': compName === 'consume' }"><p>consume</p></li>
+        <li @click="setComponent('logs')" :class="{ 'active': compName === 'logs' }"><p>logs</p></li>
       </ul>
     </nav> 
 
     <aside>
       <KeepAlive :max="3">
-        <component :is="compName"></component>
+        <div class="container">
+          <component :is="compName"></component>
+        </div>
       </KeepAlive>
     </aside>
 
@@ -44,29 +51,45 @@ header{
   top: 0;
   left: 0;
   width: 100vw;
-  height: 10vh;
-  border-bottom: 3px solid;
+  height: 15vh;
+  border-bottom: 4px solid;
   text-transform: uppercase;
   justify-content: space-evenly;
   h2{
+    
     margin: 0px;
     padding-top: 0px;
   }
 }
 
 main{
-  height: 90%;
+  height: 85vh;
 }
 
 nav{
   width: 20vw;
   min-width: 96px;
-  border-right: 3px solid;
+  border-right: 4px solid;
+  font-weight: 600;
+  text-transform: uppercase;
+  li{
+    line-height: 72px;
+    p{
+      cursor: pointer;
+    }
+  }
+  li:hover{
+    color: orange;
+  }
+}
+.active{
+  background-color: black;
+  color: white;
 }
 
 aside{
   width: 100%;
-  background-color: azure;
+  background-color:lightgrey;
 }
 
 
