@@ -3,28 +3,42 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <nav class="container-full">
+    <h1>panel control </h1>     
+  </nav>
+  
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style lang="scss">
+@import './assets/css/main.scss';
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid;
+  box-shadow: 0px 1px 2px;
+
+  span{
+    font-size: 24px;
+  }
+
+  ul :first-child{
+    flex-grow: 5;
+    cursor: default;
+
+    :hover{
+      cursor: pointer;
+      color: currentColor;
+    }
+  }
+
+  li{
+    flex-grow: 2;
+    cursor: pointer;
+  }
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>
+
