@@ -11,3 +11,6 @@ export default {
 <style lang="">
     
 </style>
+
+
+<!-- https://ott-fogliata.github.io/vuejs-s2i-repository/solar-panels.json -->

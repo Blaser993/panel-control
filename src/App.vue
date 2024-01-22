@@ -41,6 +41,11 @@ export default {
 <style lang="scss">
 @import './assets/css/main.scss';
 
+body {
+    background: var(--purple);
+    font-family: var(--font);
+}
+
 header{
   position: sticky;
   top: 0;

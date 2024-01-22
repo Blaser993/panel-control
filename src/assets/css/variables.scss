@@ -1,0 +1,28 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    
+    // neobrutalism custom
+    --green: #00ff9f;
+    --yellow: #ffdd1d;
+    --purple: #9c7bff;
+    --blue: #4b69fe;
+    --light-purple: #f8e0fa;
+    --light-green: #b2e2bb;
+    --light-yellow: #fbdba0;
+    --font: "Work Sans", sans-serif;
+    --shadow-1: 1.5vmin 1.5vmin #000;
+    --border: solid 1vmin #000;
+    --border-small: solid 0.65vmin #000;
+    }

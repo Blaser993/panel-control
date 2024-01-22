@@ -1,38 +1,41 @@
 <template lang="">
-    <div class='grid'>
-
-        
+    <div class='grid'>        
         <div class="card power">
             <p class="title">power production</p>
-            <p class="value">Full Stack Developer</p>
+            <p class="value">{{data['power-production']}} kW</p>
         </div>
 
         <div class="card month">
             <p class="title">today energy</p>
-            <p class="value">Full Stack Developer</p>
+            <p class="value">{{data['today-energy']}} kWh</p>
         </div>
 
         <div class="card today">
             <p class="title">month energy</p>
-            <p class="value">Full Stack Developer</p>
+            <p class="value">{{data['month-energy']}} kWh</p>
         </div>
 
         <div class="card left-time">
             <p class="title">left time energy</p>
-            <p class="value">Full Stack Developer</p>
+            <p class="value">{{data['left-time-energy']}} kWh</p>
         </div>
     </div>
 </template>
 
 <script>
-
-
-</script>
-<style lang="scss">
-body {
-    background: var(--purple);
-    font-family: var(--font);
+import data from '../data.json';
+export default{
+    data(){
+        return{
+            data: data,
+        }
+    }
 }
+</script>
+
+
+<style lang="scss" scoped>
+
 
 .grid {
   margin: 12px;
