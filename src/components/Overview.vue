@@ -1,7 +1,7 @@
 <template lang="">
     <div class='grid'>
 
-        <div>{{ items }}</div>
+        
         <div class="card power">
             <p class="title">power production</p>
             <p class="value">Full Stack Developer</p>
@@ -25,18 +25,7 @@
 </template>
 
 <script>
-import jsonData from '@/data.json';  
 
-export default {
-  data() {
-    return {
-      items: jsonData,
-    };
-  },
-  mounted() {
-    console.log(this.items); // Controlla la console per vedere se i dati sono presenti
-  },
-};
 
 </script>
 <style lang="scss">
