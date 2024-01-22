@@ -1,6 +1,6 @@
 <template lang="">
     <ul class="container">
-        <li  v-for="(log, index) in data.logs" :key= "index" class="log row" :class="getStatus(log.type)">
+        <li class="card log row"  v-for="(log, index) in data.logs" :key= "index" :class="getStatus(log.type)">
             <p class="col col-12">{{log.date}} - {{log.text}} - {{log.type}}</p>
         </li>
     </ul>
@@ -35,28 +35,17 @@ export default{
 <style lang="scss" scoped>
 .log {
     width: 100%;
-    text-align: left;
-    background: var(--blue);
-    border-radius: 4vmin;
-    box-shadow: var(--shadow-1);
-    border: var(--border);
-    position: relative;
-    overflow: visible;
-    padding-top:12px;
-    padding-bottom: 24px;
-    margin: auto;
-    text-transform: capitalize;
     margin-bottom: 24px;
+    background: var(--blue);
     color: white;
-    overflow: auto;
+
     p{
         padding: 0px 24px;
         margin: 0px;
         font-weight: 600;
-        font-size: 4vmin;
-    }}
-
-
+        font-size: 3vmin;
+    }
+}
 
 .error-log {
   background-color: red;

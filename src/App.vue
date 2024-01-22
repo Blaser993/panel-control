@@ -90,6 +90,24 @@ nav{
 aside{
   width: 100%;
   background-color:white;
+  overflow: auto;
+  padding: 18px ;
+  padding-top: 0px;
+}
+
+.card{
+  width: 100%;
+
+  text-align: left;
+  border-radius: 4vmin;
+  box-shadow: var(--shadow-1);
+  border: var(--border);
+  position: relative;
+  overflow: visible;
+  padding-top:12px;
+  padding-bottom: 24px;
+  margin: auto;
+  text-transform: capitalize;
 }
 
 

@@ -47,19 +47,8 @@ export default{
 }
 
 .card {
-    width: 100%;
-    aspect-ratio: 2/1;
-    text-align: left;
     background: var(--green);
-    border-radius: 4vmin;
-    box-shadow: var(--shadow-1);
-    border: var(--border);
-    position: relative;
-    overflow: visible;
-    padding-top:12px;
-    padding-bottom: 24px;
-    margin: auto;
-    text-transform: capitalize;
+    aspect-ratio: 2/1;
 
     .power { grid-area: 1 / 1 / 2 / 2; }
     .month { grid-area: 1 / 2 / 2 / 3; }
