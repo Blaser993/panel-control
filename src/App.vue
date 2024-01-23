@@ -104,8 +104,7 @@ aside{
   border: var(--border);
   position: relative;
   overflow: visible;
-  padding-top:12px;
-  padding-bottom: 24px;
+ padding: 6vmin;
   margin: auto;
   text-transform: capitalize;
 }

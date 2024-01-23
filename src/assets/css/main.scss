@@ -1,8 +1,8 @@
 @import './variables.scss';
 
 html{
-    border: none;
-    margin: none;
+border: none;
+margin: none;
 }
 
 body{margin: 0px; padding: 0px;}
@@ -91,6 +91,7 @@ a{
 .row{
   display: flex;
   flex-direction: row;
+
 }
 
 .column{
@@ -105,4 +106,8 @@ a{
 
 .col-12{
   flex-basis: 100%;
+}
+
+.col-1{
+  flex-basis: 50px;
 }

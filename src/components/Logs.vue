@@ -1,7 +1,7 @@
 <template lang="">
     <ul class="container">
         <li class="card log row"  v-for="(log, index) in data.logs" :key= "index" :class="getStatus(log.type)">
-            <p class="col col-12">{{log.date}} - {{log.text}} - {{log.type}}</p>
+            <p class="col-12">{{log.date}} - {{log.text}} - {{log.type}}</p>
         </li>
     </ul>
 </template>
