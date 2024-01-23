@@ -36,7 +36,6 @@ export default{
 
 <style lang="scss" scoped>
 
-
 .grid {
   margin: 12px;
   display: grid;
@@ -48,7 +47,7 @@ export default{
 
 .card {
     background: var(--green);
-    aspect-ratio: 2/1;
+
 
     .power { grid-area: 1 / 1 / 2 / 2; }
     .month { grid-area: 1 / 2 / 2 / 3; }
