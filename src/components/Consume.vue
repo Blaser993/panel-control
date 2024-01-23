@@ -1,7 +1,7 @@
 <template lang="">
   <div>
 
-    <h2>Weather Information API</h2>
+    <h2>Powered by <a target="blank" href="https://openweathermap.org/api">Weather Information API</a></h2>
     <div class="card row" v-if="weatherData">
       <ul class='col-6'>
         <li>
@@ -92,7 +92,7 @@ margin-right:48px;
   padding: 2vmin;
   ul{
   width:50% ;
-}
+  }
   figure{
     width: 200px;
     margin-right: 0;

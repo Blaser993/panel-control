@@ -16,15 +16,15 @@ export default {
 <template>
 
   <header class="column">
-    <h2>panel control dashboard</h2>     
+    <h1>panel control dashboard</h1>     
   </header>
   <main class="row">
 
     <nav>
       <ul class="column">
-        <li @click="setComponent('overview')" :class="{ 'active': compName === 'overview' }"><p>overview</p></li>
-        <li @click="setComponent('consume')" :class="{ 'active': compName === 'consume' }"><p>consume</p></li>
-        <li @click="setComponent('logs')" :class="{ 'active': compName === 'logs' }"><p>logs</p></li>
+        <li @click="setComponent('overview')" :class="{ 'active': compName === 'overview' }"><h1>overview</h1></li>
+        <li @click="setComponent('consume')" :class="{ 'active': compName === 'consume' }"><h1>consume</h1></li>
+        <li @click="setComponent('logs')" :class="{ 'active': compName === 'logs' }"><h1>logs</h1></li>
       </ul>
     </nav> 
 
@@ -74,7 +74,7 @@ nav{
   text-transform: uppercase;
   li{
     line-height: 72px;
-    p{
+    h1{
       cursor: pointer;
     }
   }
@@ -89,7 +89,11 @@ nav{
 
 aside{
   width: 100%;
-  background-color:white;
+
+  background-color: #e5e5f7;
+background-image:  radial-gradient(var(--blue) 0.9px, transparent 0.9px), radial-gradient(var(--blue)  0.9px, #e5e5f7 0.9px);
+background-size: 36px 36px;
+background-position: 0 0,18px 18px;
   overflow: auto;
   padding: 18px ;
   padding-top: 0px;
@@ -104,7 +108,7 @@ aside{
   border: var(--border);
   position: relative;
   overflow: visible;
- padding: 6vmin;
+  padding: 24px;
   margin: auto;
   text-transform: capitalize;
 }

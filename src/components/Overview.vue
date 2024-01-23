@@ -47,7 +47,7 @@ export default{
 
 .card {
     background: var(--green);
-
+    aspect-ratio: 2;
 
     .power { grid-area: 1 / 1 / 2 / 2; }
     .month { grid-area: 1 / 2 / 2 / 3; }
@@ -58,7 +58,7 @@ export default{
 .title {
   text-align: center;
   font-weight: 600;
-  font-size: 4vmin;
+  font-size: 24px;
 }
 .value {
   margin: auto;
